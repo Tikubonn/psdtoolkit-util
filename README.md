@@ -80,6 +80,8 @@ psdtoolkit-utilはPSDファイルからレイヤーの可視情報を生成す�
 ```py
 from psdtoolkit_util import Params, Flip, PSDVisibles
 
+#https://seiga.nicovideo.jp/seiga/im5342445
+
 psdvisibles = PSDVisibles.open("./SDゆかり.psd", encoding="cp932")
 psdvisibles #PSDVisibles([('ポーズ', True), ('ポーズ/1', True), ('ポーズ/2', False), ('ポーズ/3', False), ('ポーズ/4', False), ('ポーズ/5', False), ('他', True), ('他/影', False), ('他/照', False), ('口', True), ('口/他', True), ('口/他/べー', False), ('口/他/ぺろ', False), ('口/他/涎', False), ('口/開', True), ('口/開/ニヤ', False), ('口/開/悲', False), ('口/開/歯', False), ('口/開/。', False), ('口/開/○', False), ('口/開/∞', False), ('口/開/大▽', False), ('口/開/▽', False), ('口/開/ポーズ4用', True), ('口/開/ポーズ4用/○', False), ('口/開/ポーズ4用/大▽', False), ('口/閉', True), ('口/閉/膨', False), ('口/閉/ω', False), ('口/閉/く', False), ('口/閉/へ', False), ('口/閉/～', False), ('口/閉/⌒', False), ('口/閉/-', True), ('口/閉/、', False), ('口/閉/∪', False), ('眉', True), ('眉/- -', True), ('眉/^\u3000^', False), ('眉/^\u3000`', False), ('眉/`"´', False), ('眉/` ´', False), ('眉/´"`', False), ('眉/´ `', False), ('目', True), ('目/通常', True), ('目/ウィンク', False), ('目/逸', False), ('目/ジト目', False), ('目/白目', False), ('目/驚', False), ('目/点', False), ('目/涙目', False), ('目/泣2', False), ('目/泣1', False), ('目/閉', True), ('目/閉/＾＾', False), ('目/閉/´`', False), ('目/閉/`´', False), ('目/閉/--', False), ('目/閉/><', False), ('漫符', True), ('漫符/2', True), ('漫符/2/垂線', False), ('漫符/2/怒', False), ('漫符/2/涙', False), ('漫符/2/汗', False), ('漫符/2/絆創膏', False), ('漫符/1', True), ('漫符/1/Σ', False), ('漫符/1/電球', False), ('漫符/1/音符', False), ('漫符/1/キラキラ', False), ('漫符/1/ハート', False), ('漫符/1/焦', False), ('漫符/1/！', False), ('漫符/1/？', False)])
 params = Params({
@@ -97,6 +99,8 @@ params.serialize() #L.0 V.9E0AwmIBIEwMAQYIAA
 
 ```py
 from psdtoolkit_util import Params, Flip, PSDPath, PSDVisibles
+
+#https://seiga.nicovideo.jp/seiga/im5342445
 
 psdvisibles = PSDVisibles.open("./SDゆかり.psd", encoding="cp932")
 psdvisibles.change_visible(PSDPath("ポーズ/1"), False)
