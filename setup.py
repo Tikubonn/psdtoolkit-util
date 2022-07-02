@@ -15,7 +15,9 @@ setup(
   url="https://github.com/tikubonn/psdtoolkit-util",
   license="MIT",
   packages=find_packages(),
-  install_requires=[],
+  install_requires=[
+    "psd-tools",
+  ],
   dependency_links=[],
   entry_points={},
   classifiers=[
